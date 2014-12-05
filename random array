@@ -1,0 +1,26 @@
+//Author Brad Booker
+//Q4P1
+
+import java.awt.*;
+import javax.swing.*;
+import java.util.*;
+
+public class BradBookerFinProb1
+{
+  public static void main( String [] args )
+  {  		
+int [] numbers;
+numbers = new int[20];
+Random randomGenerator = new Random() ;
+double avg ;
+int num = 0 ;
+ 
+ for (int i = 1; i < numbers.length; i++){
+ int randomInt = randomGenerator.nextInt(1000); //generates the numbers
+ while ( randomInt % 2 == 0 ) //check if odd
+		{randomInt = randomGenerator.nextInt(1000);
+		}
+		
+numbers[i] = randomInt ;
+ System.out.println("The number is " + randomInt);}
+ 
