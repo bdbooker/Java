@@ -1,0 +1,26 @@
+/* Author: Brad Booker
+	Assignment 10
+*/
+
+import java.util.* ;
+import java.text.* ;
+import javax.swing.* ; // ***** add your import statements here
+
+public class Assignment10
+{
+  public static void main( String [] args )
+  {
+    int num, num2 ;
+	 int fact = 1;
+	 	 Scanner input = new Scanner(System.in) ;
+	 System.out.print( "What number would you like to use >" ) ;
+	 num = input.nextInt() ;
+	 
+	 
+	 for ( int count = num; count>0 ; count --){
+     fact *=count;  
+	  
+	 }
+	 System.out.println("The factorial of " + num + " is " + fact) ;
+	 }
+	 }
