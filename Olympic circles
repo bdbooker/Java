@@ -1,0 +1,30 @@
+// Brad Booker
+
+import javax.swing.JApplet;
+import java.awt.Graphics;
+import java.awt.Color;
+
+public class Assignment5_Olympics extends JApplet
+{
+public void paint( Graphics g )
+{
+super.paint( g );
+
+int centerV = 140, centerV2 = 190;
+int centerW = 222, centerW2 = 190;
+int centerZ = 165, centerZ2 = 255;
+int centerY = 300, centerY2 = 190;
+int centerX = 260, centerX2 = 255;
+int radius = 55;
+g.setColor(Color.GREEN);
+g.drawOval( centerX - radius, centerX2 - radius, radius * 2, radius * 2 );
+g.setColor(Color.BLUE); 
+g.drawOval( centerV - radius, centerV2 - radius, radius * 2, radius * 2 );
+g.setColor(Color.BLACK);
+g.drawOval( centerW - radius, centerW2 - radius, radius * 2, radius * 2 );
+g.setColor(Color.RED);
+g.drawOval( centerY - radius, centerY2 - radius, radius * 2, radius * 2 );
+g.setColor(Color.YELLOW);
+g.drawOval( centerZ - radius, centerZ2 - radius, radius * 2, radius * 2 );
+}
+}
